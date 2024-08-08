@@ -1,2 +1,23 @@
-# mydataengineering
-A project dedicated to sharing knowledge, resources, and insights about all things Data Engineering. Join us to explore articles, tutorials, and community contributions on the latest trends and best practices in the field.
+# Pour: All Things Data Engineering
+
+The project aims to provide knowledge, resources, and insights to enthusiasts and professionals in the field of data engineering.
+
+- **Tutorials**
+- **Blogs**
+- **Case Studies**
+
+## Contributing
+
+Coming soon...
+
+## Contact
+
+For any questions or feedback, please reach out to us at [your-email@example.com].
+
+## Acknowledgements
+
+This project uses the [Chirpy Jekyll Theme](https://github.com/cotes2020/jekyll-theme-chirpy) by [Cotes](https://github.com/cotes2020), licensed under the [MIT License](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE).
+
+## License
+
+This project is published under [MIT License](./LICENSE).
