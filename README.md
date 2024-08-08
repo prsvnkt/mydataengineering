@@ -1,4 +1,4 @@
-# Pour: All Things Data Engineering
+# MyDE: All Things Data Engineering
 
 The project aims to provide knowledge, resources, and insights to enthusiasts and professionals in the field of data engineering.
 
@@ -12,7 +12,7 @@ Coming soon...
 
 ## Contact
 
-For any questions or feedback, please reach out to us at [your-email@example.com].
+For any questions or feedback, please reach out to us at [email](prasu.urv@gmail.com).
 
 ## Acknowledgements
 
