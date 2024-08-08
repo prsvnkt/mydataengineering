@@ -26,13 +26,6 @@ Data that adheres to a predefined format or schema. It is easily searchable and 
 - Tabular data from spreadsheets or databases
 - SQL databases (e.g., MySQL, PostgreSQL)
 
-| StudentID | Name  | Course   |
-|-----------|-------|----------|
-| 1         | Alice | Math     |
-| 1         | Alice | Science  |
-| 2         | Bob   | Math     |
-| 2         | Bob   | English  |
-
 
 ### 2. Semi-Structured Data
 
@@ -107,31 +100,6 @@ Data that lacks a predefined format or structure. It is typically stored in NoSQ
 - Images, audio, and video files
 - Social media posts
 
-
-## Integrating Data Types into Database Concepts
----
-
-When designing databases and choosing the appropriate technology, it's essential to consider the type of data you'll be managing:
-
-- **Relational Databases (RDBMS):**
-  - Best suited for structured data.
-  - Use SQL for defining and manipulating data.
-  - Examples: MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
-
-- **NoSQL Databases:**
-  - Ideal for semi-structured and unstructured data.
-  - Types include key-value stores, document stores, column-family stores, and graph databases.
-  - Examples: MongoDB, Cassandra, Redis, Neo4j.
-
-- **NewSQL Databases:**
-  - Combine the scalability of NoSQL with the ACID guarantees of traditional RDBMS.
-  - Suitable for applications requiring strong consistency and scalability.
-  - Examples: Google Spanner, CockroachDB.
-
-- **In-Memory Databases:**
-  - Store data in RAM for extremely fast access.
-  - Suitable for real-time analytics and applications requiring low-latency access.
-  - Examples: Redis, Memcached.
 
 ## Understanding File Types
 ---
