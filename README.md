@@ -12,7 +12,7 @@ Coming soon...
 
 ## Contact
 
-For any questions or feedback, please reach out to us at [email](prasu.urv@gmail.com).
+For any questions or feedback, please reach out at [prasu.urv@gmail.com].
 
 ## Acknowledgements
 
