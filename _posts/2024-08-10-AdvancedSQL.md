@@ -95,7 +95,7 @@ This query combines the `Employees` and `Departments` tables to show each employ
 
 A subquery is a query nested inside another query. Subqueries are used to perform operations in multiple steps, especially when you need to filter, aggregate, or compare data within the main query.
 
-**Example:**
+**Example**
 
 ```sql
 SELECT FirstName, LastName
@@ -113,7 +113,7 @@ Indexes are used to speed up the retrieval of rows by creating a quick lookup re
 - **Single Column Index:** Created on a single column of a table.
 - **Composite Index:** Created on two or more columns of a table.
 
-**Example:**
+**Example**
 
 ```sql
 CREATE INDEX idx_employee_lastname ON Employees(LastName);
@@ -131,7 +131,7 @@ SQL functions perform calculations on data and return a single value or a set of
 - **String Functions:** Such as `CONCAT()`, `SUBSTRING()`, `LENGTH()`.
 - **Date Functions:** Such as `NOW()`, `DATEDIFF()`, `DATEADD()`.
 
-**Example:**
+**Example**
 
 ```sql
 SELECT CONCAT(FirstName, ' ', LastName) AS FullName FROM Employees;
@@ -143,7 +143,8 @@ This query uses the `CONCAT()` function to combine the `FirstName` and `LastName
 ---
 
 A view is a virtual table based on the result set of a query. Views simplify complex queries by encapsulating them into a single object, which can then be queried like a regular table.
-**Example:**
+
+**Example**
 
 ```sql
 CREATE VIEW EmployeeDepartments AS
@@ -159,7 +160,7 @@ This command creates a view named `EmployeeDepartments`, which can be queried to
 
 Stored procedures are precompiled SQL code that can be executed as a single unit. They are used to encapsulate complex logic and can accept parameters, return results, and be reused across applications.
 
-**Example:**
+**Example 1**
 
 ```sql
 CREATE PROCEDURE GetEmployeeInfo(IN empID INT)
@@ -176,6 +177,33 @@ CALL GetEmployeeInfo(1);
 ```
 
 The `CALL` command is used to execute the above stored procedure where `1` is passed as the `empID` parameter, which will be used in the `SELECT` statement inside the stored procedure to retrieve the details of the employee with `EmployeeID = 1`.
+
+**Example 2**
+
+```sql
+CREATE PROCEDURE GetEmployeeDetails(
+    IN empID INT,
+    OUT empName VARCHAR(100),
+    OUT deptName VARCHAR(100)
+)
+BEGIN
+    SELECT FirstName, LastName, DepartmentName
+    INTO empName, deptName
+    FROM Employees
+    JOIN Departments ON Employees.DepartmentID = Departments.DepartmentID
+    WHERE EmployeeID = empID;
+    
+    SET empName = CONCAT(empName, ' ', deptName);
+END;
+```
+This stored procedure, `GetEmployeeDetails`, takes an employee ID as input and outputs `empName` and `deptName` corresponding to the employee's information.
+
+```sql
+CALL GetEmployeeDetails(1, @empName, @deptName);
+SELECT @empName AS EmployeeName, @deptName AS DepartmentName;
+```
+
+The `CALL` command is used to execute the above stored procedure where `1` is passed as the `empID` parameter and the outputs from the stored procedure is used in the select statement mentioned after the `CALL` statement.
 
 ## Query Optimization
 ---
