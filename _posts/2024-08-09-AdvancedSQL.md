@@ -2,7 +2,7 @@
 title: Advanced SQL
 description: Explore advanced SQL concepts, including joins, subqueries, indexes, functions, and optimization techniques, to enhance your data management skills and build robust database solutions.
 author: prasanna
-date: 2024-08-10T00:00:00+0000
+date: 2024-08-10T00:30:00+0000
 categories: [Blog]
 tags: [SQL, Database, Data Warehouse, ETL]
 mermaid: true
