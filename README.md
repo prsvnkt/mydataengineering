@@ -1,6 +1,6 @@
 # MyDE: All Things Data Engineering
 
-The project aims to provide knowledge, resources, and insights to enthusiasts and professionals in the field of data engineering.
+The project aims to provide knowledge, insights and resources to enthusiasts and professionals in the field of data engineering.
 
 - **Tutorials**
 - **Blogs**
