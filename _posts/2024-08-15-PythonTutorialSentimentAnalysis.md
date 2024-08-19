@@ -285,7 +285,7 @@ From the dataset, it can be seen that there is only 3,872 unique values which me
 sns.countplot(x="sentiment", hue="sentiment", data = fntrain)
 ```
     
-![png](assets\img\PythonTutorialSentimentAnalysis\SA_FinancialNews_files/SA_FinancialNews_21_1.png)
+![png](assets/img/PythonTutorialSentimentAnalysis/SA_FinancialNews_files/SA_FinancialNews_21_1.png)
     
 
 ```python
@@ -964,7 +964,7 @@ plot_confusion_matrix(bow_lsvm, bow_fntest, target_fntest,
 ```
 
     
-![png](assets\img\PythonTutorialSentimentAnalysis\SA_FinancialNews_files/SA_FinancialNews_98_1.png)
+![png](assets/img/PythonTutorialSentimentAnalysis/SA_FinancialNews_files/SA_FinancialNews_98_1.png)
     
 
 
@@ -999,7 +999,7 @@ plot_confusion_matrix(use_lsvm, use_fntest, target_fntest,
 ```
 
     
-![png](assets\img\PythonTutorialSentimentAnalysis\SA_FinancialNews_files/SA_FinancialNews_102_1.png)
+![png](assets/img/PythonTutorialSentimentAnalysis/SA_FinancialNews_files/SA_FinancialNews_102_1.png)
     
 
 
@@ -1034,7 +1034,7 @@ plot_confusion_matrix(bert_lsvm, bert_fntest, target_fntest,
 ```
 
     
-![png](assets\img\PythonTutorialSentimentAnalysis\SA_FinancialNews_files/SA_FinancialNews_106_1.png)
+![png](assets/img/PythonTutorialSentimentAnalysis/SA_FinancialNews_files/SA_FinancialNews_106_1.png)
     
 
 
@@ -1160,4 +1160,4 @@ plot_confusion_matrix(bert_mlp, bert_fntest, target_fntest,
                                  normalize='true')
 ```
     
-![png](assets\img\PythonTutorialSentimentAnalysis\SA_FinancialNews_files/SA_FinancialNews_118_1.png)
+![png](assets/img/PythonTutorialSentimentAnalysis/SA_FinancialNews_files/SA_FinancialNews_118_1.png)

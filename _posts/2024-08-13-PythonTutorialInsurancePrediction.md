@@ -440,7 +440,7 @@ ht.set_title('Correlation Heatmap', fontdict={'fontsize':12}, pad=12);
 
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_14_0.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_14_0.png)
     
 
 
@@ -453,7 +453,7 @@ sns.histplot(x=train["Age"], bins=20)
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_16_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_16_1.png)
     
 
 From the graph above, the histogram of age is right skewed upon inspection.
@@ -465,7 +465,7 @@ sns.boxplot(y=train["Age"])
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_18_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_18_1.png)
     
 
 
@@ -478,7 +478,7 @@ sns.histplot(x=train["Annual_Premium"], bins=20)
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_20_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_20_1.png)
     
 
 
@@ -491,7 +491,7 @@ sns.boxplot(y=train["Annual_Premium"])
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_22_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_22_1.png)
     
 
 
@@ -504,7 +504,7 @@ sns.catplot(x="Gender",  col="Response", kind="count", data=train)
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_24_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_24_1.png)
     
 
 
@@ -517,7 +517,7 @@ sns.catplot(x="Vehicle_Age",  col="Response", kind="count", data=train)
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_26_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_26_1.png)
     
 
 
@@ -546,7 +546,7 @@ sns.catplot(x="Vehicle_Damage",  col="Response", kind="count", data=train)
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_30_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_30_1.png)
     
 
 
@@ -559,7 +559,7 @@ sns.catplot(x="Previously_Insured",  col="Response", kind="count", data=train)
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_32_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_32_1.png)
     
 
 
@@ -575,7 +575,7 @@ From the analysis in previous sections, there are no missing values in the datas
 dummy = train.hist(bins=50, figsize=(16,12))
 ```
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_36_0.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_36_0.png)
     
 
 ```python
@@ -637,7 +637,7 @@ sns.histplot(x=train["Age_log"], bins=20)
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_43_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_43_1.png)
     
 
 
@@ -659,7 +659,7 @@ train['Annual_Premium_log'] = np.log(train['Annual_Premium'])
 sns.histplot(x=train["Annual_Premium_log"], bins=20)
 ```
    
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_46_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_46_1.png)
     
 
 
@@ -676,7 +676,7 @@ train['z_score']=stats.zscore(train['Annual_Premium_log'])
 sns.histplot(x=train['z_score'], bins=20)
 ```
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_48_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_48_1.png)
     
 
 
@@ -699,7 +699,7 @@ sns.histplot(x=train["Annual_Premium_log"], bins=20)
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_51_1.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_51_1.png)
     
 
 
@@ -766,7 +766,7 @@ dummy = train.hist(bins=50, figsize=(16,12))
 ```
 
     
-![png](assets\img\PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_58_0.png)
+![png](assets/img/PythonTutorialInsurancePrediction/datavisualisation-preprocessing_files/datavisualisation-preprocessing_58_0.png)
     
 
 
